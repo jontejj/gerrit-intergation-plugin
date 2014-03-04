@@ -10,7 +10,7 @@ import com.pawelmaslyk.gerritintegration4sonar.sonar.SonarAnalysisResult;
  */
 public class GerritCommand {
 
-	private static final String GERRIT_CODE_REVIEW_COMMAND = "gerrit approve --project %s --message \"Sonar analysis\" --code-review %s %s,%s";
+	private static final String GERRIT_CODE_REVIEW_COMMAND = "gerrit review --project %s --message \"Sonar analysis\" --code-review %s %s,%s";
 
 	/**
 	 * Create a gerrit approve command for a commit given the sonar analysis results
